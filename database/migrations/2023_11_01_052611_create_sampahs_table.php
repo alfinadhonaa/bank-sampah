@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('sampahs', function (Blueprint $table) {
             $table->increments('id_sampah');
-            $table->string('jenis_sampah');
+            $table->integer('jenis_sampah');
             $table->integer('harga');
             $table->integer('berat');
             $table->integer('total');
